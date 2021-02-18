@@ -15,7 +15,7 @@
     display: block;
 }
 
-@media(max-width: 550px) {
+@media(max-width: 750px) {
     .item {
         width: 31.33%;
     }
@@ -25,5 +25,9 @@
     .item {
         width: 48%;
     }
+}
+
+.item p {
+    padding: 0 6px;
 }
 

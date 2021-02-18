@@ -11,8 +11,10 @@ const List = ({categories}) => {
     
     useEffect(() => {
         getGifs(categories)
-            .then(data => setResults(state => ([...state, ...data])))
+            .then(data => {
+            setResults(state => ([...state, ...data]));
             setLoading(false);
+            });
     },[categories]);
 
     return(
