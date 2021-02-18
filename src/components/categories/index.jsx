@@ -16,7 +16,7 @@ const Categories = ({categories}) => {
             <li className={styles.item}
             id={uuidv4()}
             key={uuidv4()}>
-                <h2 className={styles.title}>category: {ct}</h2>
+                <h2 className={styles.title}>category: <em>{ct}</em></h2>
                 <List key={ct} categories={ct}/>
             </li>)}
         </ul>
