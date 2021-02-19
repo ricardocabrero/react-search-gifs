@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import styles from './categories.module.css'
 import List from '../list';
@@ -23,6 +24,10 @@ const Categories = ({categories}) => {
         }
         </>
     );
+}
+
+Categories.propTypes = {
+    categories: PropTypes.array.isRequired,
 }
 
 export default Categories;

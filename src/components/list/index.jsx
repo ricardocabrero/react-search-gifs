@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './list.module.css';
 import getGifs from '../../utils/getGifs';
 import Item from '../item';
@@ -25,6 +26,10 @@ const List = ({categories}) => {
         </ul>
         : <p className={styles.warning}>This category <strong>({categories})</strong> has no results.</p>
     )
+}
+
+List.propTypes = {
+    categories: PropTypes.string.isRequired,
 }
 
 export default List;

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import styles from './item.module.css';
 import imgLoading from '../../img/loading.gif';
@@ -25,6 +26,10 @@ const Item = ({data}) => {
             </Link>
         </li>
     )
+}
+
+Item.propTypes = {
+    data: PropTypes.object.isRequired,
 }
 
 export default Item;

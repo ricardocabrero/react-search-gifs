@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import HandleForm from '../../customHooks/handleForm';
 import styles from './form.module.css';
 
@@ -33,6 +34,10 @@ const Form = ({setCategories}) => {
             </form>
         </div>
     )
+}
+
+Form.propTypes = {
+    setCategories: PropTypes.func.isRequired,
 }
 
 export default Form;

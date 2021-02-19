@@ -1,4 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import { gsap } from "gsap";
 import imgLoading from '../../img/loading.gif'
@@ -32,6 +33,10 @@ const DetailCard = ({data}) => {
             </div>
         </div>
     )
+}
+
+DetailCard.propTypes = {
+    data: PropTypes.object.isRequired,
 }
 
 export default DetailCard;
