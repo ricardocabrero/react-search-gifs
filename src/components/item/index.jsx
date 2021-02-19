@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import {Link} from 'react-router-dom';
 import styles from './item.module.css';
 import imgLoading from '../../img/loading.gif';
 
@@ -15,11 +16,13 @@ const Item = ({data}) => {
     return(
         <li className={styles.item}
         key={id} id={id}>
-            <img alt={title}
-             src={loading ? imgLoading : src} 
-             ref={img}
-             onLoad={() => handleLoading()}/>
-            <p>{title}</p>
+            <Link to={`detail/${id}`}>
+                <img alt={title}
+                src={loading ? imgLoading : src} 
+                ref={img}
+                onLoad={() => handleLoading()}/>
+                <p>{title}</p>
+            </Link>
         </li>
     )
 }

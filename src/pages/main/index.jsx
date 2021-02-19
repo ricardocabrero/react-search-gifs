@@ -3,7 +3,7 @@ import Title from '../../components/title';
 import Form from '../../components/form';
 import Categories from '../../components/categories';
 
-const GifExpertApp = () => {
+const Main = () => {
 
     const [categories, setCategories] = useState([]);
 
@@ -16,4 +16,4 @@ const GifExpertApp = () => {
     )
 }
 
-export default GifExpertApp;
+export default Main;

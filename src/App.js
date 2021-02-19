@@ -1,11 +1,11 @@
 import './App.css';
-import GifExpertApp from './main/gifExpertApp';
+import RouterApp from './components/routerApp';
 
 const App = () => {
 
   return (
     <div className="App">
-      <GifExpertApp/>
+      <RouterApp/>
     </div>
   );
 }
