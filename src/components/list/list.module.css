@@ -6,3 +6,9 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
+.warning {
+    margin-top: 0;
+    text-align: left;
+    margin-left: 1%;
+}

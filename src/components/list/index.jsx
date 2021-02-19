@@ -18,10 +18,12 @@ const List = ({categories}) => {
     },[categories]);
 
     return(
+        results.length !== 0 ?
         <ul className={styles.list}>
-            {loading && <p>Loading...</p>}
+            {loading && <p className={styles.warning}>Loading...</p>}
             {results.map(data => <Item key={data.id} data={data}/>)}
         </ul>
+        : <p className={styles.warning}>This category <strong>({categories})</strong> has no results.</p>
     )
 }
 
