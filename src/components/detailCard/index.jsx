@@ -15,9 +15,10 @@ const DetailCard = ({data}) => {
     }
 
     useEffect(() => {
-        gsap.to("#detail", {duration: 2, y: 100, ease: "bounce"});
-    },[])
-
+        if(!loading) {
+            gsap.to("#detail", {duration: 1.5, rotation: 360, scale: 1});
+        }
+    },[loading]);
 
     return(
         <div id={id} className={styles.wrap}>

@@ -12,8 +12,6 @@
     width: 310px;
     box-shadow: 0 0 6px #3c3b3b;
     margin: 20px auto;
-    position: relative;
-    top: -100px;
 }
 
 .detail img {
