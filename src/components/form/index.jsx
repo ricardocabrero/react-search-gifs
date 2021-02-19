@@ -24,6 +24,7 @@ const Form = ({setCategories}) => {
             <form onSubmit={handleSubmit}>
                 <label className={styles.sr} htmlFor="text">text</label>
                 <input
+                placeholder="Search gifs..."
                 value={text}
                 onChange={handleChange} 
                 autoComplete="off"
